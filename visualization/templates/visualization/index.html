@@ -1,0 +1,211 @@
+<html>
+<head>
+	<title><www.ubdtce com></title>
+	<style type=text/css>
+		.leftdiv
+		{
+		float: left;
+		}
+		.middlediv
+		{
+		float: left;
+		background-color:wheat
+		}
+		.rightdiv
+		{
+		float: left;
+		}
+		div{
+		padding : 1%;
+		color: white;
+		background-color: wheat;
+		width: 30%;
+		border: solid black;
+		}
+	</style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<body>
+<body style="background-color:grey;"><br/>
+ <center><h3> <strong style="color:#FFC300;">UBDTCE CAMPUS RECRUITMENT DATA VISUALIZATION</strong></a></h2></h3></center><br/>
+	<div class="leftdiv">
+    <center><h6> <strong style="color:#FFC300;">UBDTCE CAMPUS RECRUITMENT PROGRESSIVE REPORT</strong></a></h6></h3></center><br/>
+		<canvas id="myChart1" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xValues = [50,60,70,80,90,100,110,120,130,140,150];
+var yValues = [7,8,8,9,9,9,10,14,14,];
+
+new Chart("myChart1", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}
+    }],
+    }
+   
+  }
+});
+</script>
+	</div>
+	<div class="middlediv">
+    <center><h6> <strong style="color:#FFC300;">UBDTCE CAMPUS RECRUITMENT BASED ON YEARS</strong></a></h6></h3></center><br/>
+		<canvas id="myChart2" style="width:100%;max-width:1000px"></canvas>
+
+<script>
+var xValues = ["2022", "2021", "2020", "2019", "2018"];
+var yValues = [55, 49, 44, 24, 15,10];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart2", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: ""
+    }
+  }
+});
+</script>
+
+	</div>
+	<div class="rightdiv">
+    <center><h6> <strong style="color:#FFC300;">UBDTCE CAMPUS RECRUITMENT BASED ON MALE AND FEMALE STUDENTS</strong></a></h6></h3></center><br/>
+		<canvas id="myChart3" style="width:100%;max-width:2500px"></canvas>
+
+<script>
+var xValues = ["MALE", "FEMALE"];
+var yValues = [55, 49,30];
+var barColors = ["red", "green"];
+
+new Chart("myChart3", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: ""
+    }
+  }
+});
+</script>
+	</div>
+  <div class="leftdiv">
+    <center><h6> <strong style="color:#FFC300;">UBDTCE CAMPUS RECRUITMENT BASED ON PLACED AND UNPLACED STUDENTS</strong></a></h6></h3></center><br/>
+		<canvas id="myChart4" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xValues = ["PLACED STUDENTS", "UNPLACED STUDENTS", ];
+var yValues = [55, 49];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+ 
+];
+
+new Chart("myChart4", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: ""
+    }
+  }
+});
+</script>
+
+	</div>
+	<div class="middlediv">
+    <center><h6> <strong style="color:#FFC300;">UBDTCE CAMPUS RECRUITMENT BASED ON DEPARTMENTS </strong></a></h6></h3></center><br/>
+    <canvas id="myChart5" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xValues = ["CSE", "EC", "ME", "EE", "CE"];
+var yValues = [55, 49, 44, 24, 15,10];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart5", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: ""
+    }
+  }
+});
+</script>
+      
+	</div>
+	<div class="rightdiv">
+    <center><h6> <strong style="color:#FFC300;">UBDTCE CAMPUS RECRUITMENT BASED ON I.T COMPANIES</strong></a></h6></h3></center><br/>
+		<canvas id="myChart6" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xValues = ["INFOSYS", "WIPRO", "ACCENTURE", "BEL", "OTHERS"];
+var yValues = [55, 49, 44, 24, 15,10];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart6", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: ""
+    }
+  }
+});
+</script>
+	</div>
+
+</body>
+</html>

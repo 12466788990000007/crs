@@ -1,0 +1,63 @@
+from django.db import models
+
+# Create your models here.
+class ANNUALData(models.Model):
+    year = models.CharField(max_length=100)
+    totalstu = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = 'Annual placed Student Data'
+
+    def __str__(self):
+        return  f'{self.year}-{self.totalstu}'
+
+class CompanyData(models.Model):
+    Company = models.CharField(max_length=100)
+    totalstu1 = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = 'Company current year placed Student Data'
+
+    def __str__(self):
+        return f'{self.Company}-{self.totalstu1}'
+
+class DepatmentData(models.Model):
+    depatment = models.CharField(max_length=100)
+    totalstu2 = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = 'Departmentwise placed Student Data'
+
+    def __str__(self):
+        return f'{self.depatment}-{self.totalstu2}'
+
+class GenderData(models.Model):
+    gender = models.CharField(max_length=100)
+    totalstu3 = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = 'Genderwise placed Student Data'
+
+    def __str__(self):
+        return f'{self.gender}-{self.totalstu3}'
+
+class catagaryData(models.Model):
+    catagory = models.CharField(max_length=100)
+    totalstu4 = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = 'Catagorieswise placed Student Data'
+
+    def __str__(self):
+        return f'{self.catagory}-{self.totalstu4}'
+
+class UnplacedData(models.Model):
+    Placedunplaced = models.CharField(max_length=100)
+    totalstu5 = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = 'placementwise placed -unplaced Student Data'
+
+    def __str__(self):
+        return f'{self.Placedunplaced}-{self.totalstu5}'
+

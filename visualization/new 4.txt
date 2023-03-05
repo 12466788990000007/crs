@@ -1,0 +1,17 @@
+from django.contrib import admin
+from . models import ANNUALData
+from . models import CompanyData
+from . models import DepatmentData
+from . models import GenderData
+from . models import catagaryData
+from . models import UnplacedData
+
+
+# Register your models here.
+admin.site.register(ANNUALData)
+admin.site.register(CompanyData)
+admin.site.register(GenderData)
+admin.site.register(catagaryData)
+admin.site.register(DepatmentData)
+admin.site.register(UnplacedData)
+

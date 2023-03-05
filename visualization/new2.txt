@@ -1,0 +1,72 @@
+from multiprocessing import context
+from django.shortcuts import render
+from .models import ANNUALData
+from .models import CompanyData
+from .models import DepatmentData
+from .models import GenderData
+from .models import catagaryData
+from .models import UnplacedData
+# Create your views here.
+
+
+#def index(request):
+  #  return render(request,'visualization/index.html')
+
+def index(request):
+    data1 = ANNUALData.objects.all()
+    context = {
+        'data1': data1,
+        
+    }
+    return render(request, 'visualization/index.html', context)
+
+def index(request):
+    data2 = ANNUALData.objects.all()
+    context = {
+        'data2': data2,
+        
+    }
+    return render(request, 'visualization/index.html', context)
+
+def index(request):
+    data3 = CompanyData.objects.all()
+    context = {
+        'data3': data3,
+        
+    }
+    return render(request, 'visualization/index.html', context)
+
+def index(request):
+    data4 = DepatmentData.objects.all()
+    context = {
+        'data4': data4,
+        
+    }
+    return render(request, 'visualization/index.html', context)
+def index(request):
+    data5 = GenderData.objects.all()
+    context = {
+        'data5': data5,
+        
+    }
+    return render(request, 'visualization/index.html', context)
+
+def index(request):
+    data6 = catagaryData.objects.all()
+    context = {
+        'data6': data6,
+        
+    }
+    return render(request, 'visualization/index.html', context)
+
+def index(request):
+    data7 = UnplacedData.objects.all()
+    context = {
+        'data7': data7,
+        
+    }
+    return render(request, 'visualization/index.html', context)
+
+
+
+# Create your views here.
